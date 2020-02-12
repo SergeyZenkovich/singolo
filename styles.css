@@ -1,0 +1,59 @@
+@import "fonts.css"; 
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.header{
+    width: 1020px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 89px;
+    background-color: #2d303a;
+}
+.header-shadow{
+    height: 6px;
+    background-color: #323746;
+}
+.header-logo{
+    display: flex;
+    align-items: flex-start;
+}
+.header-logo__name{
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato-Bold-A";
+    text-align: left;
+    text-transform: uppercase;
+}
+.header-logo__asterisk{
+    line-height: 6px;
+    color: #f06c64;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-elem{
+    width: 80px;
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato-Bold-B";
+    text-align: left;
+    text-transform: uppercase;
+}
+.navbar-elem__active{
+    width: 60px;
+    font-size: 12px;
+    line-height: 6px;
+    color: #f06c64;
+    font-family: "Lato-Bold-B";
+    text-align: left;
+    text-transform: uppercase;
+}

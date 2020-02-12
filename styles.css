@@ -1,59 +1,74 @@
-@import "fonts.css"; 
+@import 'fonts.css';
 
-body{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+body {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
-.header{
-    width: 1020px;
+.header {
+  position: absolute;
+  width: 1020px;
 }
-.header-content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 89px;
-    background-color: #2d303a;
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 89px;
+  background-color: #2d303a;
 }
-.header-shadow{
-    height: 6px;
-    background-color: #323746;
+.header-shadow {
+  height: 6px;
+  background-color: #323746;
 }
-.header-logo{
-    display: flex;
-    align-items: flex-start;
+.header-logo {
+  position: relative;
+  left: -93px;
+  top: 7px;
 }
-.header-logo__name{
-    font-size: 25px;
-    line-height: 6px;
-    color: #ffffff;
-    font-family: "Lato-Bold-A";
-    text-align: left;
-    text-transform: uppercase;
+.header-logo__name {
+  font-size: 25px;
+  line-height: 6px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-family: 'Lato-Bold-A';
+  text-align: left;
+  text-transform: uppercase;
 }
-.header-logo__asterisk{
-    line-height: 6px;
-    color: #f06c64;
+.header-logo__asterisk {
+  display: block;
+  position: relative;
+  left: 106px;
+  top: -19px;
+  line-height: 6px;
+  font-size: 21px;
+  color: #f06c64;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  position: relative;
+  left: 119px;
+  top: 5px;
+  justify-content: space-between;
 }
-.navbar-elem{
-    width: 80px;
-    font-size: 12px;
-    line-height: 6px;
-    color: #ffffff;
-    font-family: "Lato-Bold-B";
-    text-align: left;
-    text-transform: uppercase;
+
+.navbar-elem {
+  font-size: 12px;
+  line-height: 6px;
+  margin-right: 32px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-family: 'Lato-Bold-B';
+  text-align: left;
+  text-transform: uppercase;
 }
-.navbar-elem__active{
-    width: 60px;
-    font-size: 12px;
-    line-height: 6px;
-    color: #f06c64;
-    font-family: "Lato-Bold-B";
-    text-align: left;
-    text-transform: uppercase;
+.navbar-elem__active {
+  width: 50px;
+  margin-right: 18px;
+  font-size: 12px;
+  line-height: 6px;
+  letter-spacing: -0.5px;
+  color: #f06c64;
+  font-family: 'Lato-Bold-B';
+  text-align: left;
+  text-transform: uppercase;
 }

@@ -10,9 +10,7 @@ body {
   width: 1020px;
 }
 .header-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  position: relative;
   height: 89px;
   background-color: #2d303a;
 }
@@ -21,9 +19,10 @@ body {
   background-color: #323746;
 }
 .header-logo {
+  display: inline-block;
   position: relative;
-  left: -93px;
-  top: 7px;
+  left: 40px;
+  top: 40px;
 }
 .header-logo__name {
   font-size: 25px;
@@ -44,28 +43,41 @@ body {
   color: #f06c64;
 }
 .navbar {
-  display: flex;
+  display: inline-block;
+  width: 435px;
+  height: 89px;
   position: relative;
-  left: 119px;
+  left: 450px;
   top: 5px;
   justify-content: space-between;
 }
-
 .navbar-elem {
+  display: inline-block;
+  position: relative;
   font-size: 12px;
-  line-height: 6px;
-  margin-right: 32px;
+  line-height: 8px;
+  margin: 0px 10px;
   letter-spacing: -0.5px;
   color: #ffffff;
-  font-family: 'Lato-Bold-B';
+  font-family: 'Lato-Bold-A';
   text-align: left;
   text-transform: uppercase;
 }
+.navbar-elem__dot{
+  display: inline-block;
+  font-size: 26px;
+  line-height: 2px;
+  text-align: left;
+  color: #494e62;
+}
 .navbar-elem__active {
-  width: 50px;
-  margin-right: 18px;
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin-right: 10px;
   font-size: 12px;
-  line-height: 6px;
+  line-height: 8px;
   letter-spacing: -0.5px;
   color: #f06c64;
   font-family: 'Lato-Bold-B';

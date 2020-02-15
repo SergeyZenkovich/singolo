@@ -63,7 +63,7 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
-.navbar-elem__dot{
+.navbar-elem__dot {
   display: inline-block;
   position: relative;
   top: 6px;
@@ -86,42 +86,145 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
-.main{
+.main {
   width: 1020px;
   height: 1116px;
 }
-.sliderBlock{
+.sliderBlock {
   position: relative;
   width: 1020px;
   height: 600px;
   background-color: #f06c64;
 }
-.prev, .next{
+.prev,
+.next {
   position: relative;
 }
-.prev{
+.prev {
   top: 281px;
   left: 42px;
 }
-.next{
-  top: 250px;
+.next {
+  top: -712px;
   left: 964px;
 }
-.iphoneVerticalBlock{
-  position: relative;
-  height: 481px;
-}
-.iphoneVerticalBlock-base{
+.iphoneVerticalBlock {
   position: relative;
   left: 0px;
   top: 0px;
-  width: 215px;
-  height: 458px;
-  background-image: url('assets/img/BaseVertical.png');
+  width: 400px;
+  height: 481px;
 }
-.sliderBlcok-shadow{
+.iphoneVertical-base {
+  position: absolute;
+  left: 110px;
+  top: 21px;
+  width: 218px;
+  height: 461px;
+  z-index: 3;
+}
+.iphoneVerticalSrceen {
+  position: absolute;
+  left: 123px;
+  top: 84px;
+  width: 194px;
+  height: 339px;
+  z-index: 4;
+}
+.iphoneVerticalSrceenBackground {
+  position: absolute;
+  left: 126px;
+  top: 87px;
+  width: 188px;
+  height: 333px;
+  background-image: url('assets/img/VerticalBackground.png');
+  background-position: -14px -135px;
+  z-index: 5;
+}
+.iphoneVerticalCam {
+  position: absolute;
+  left: 213px;
+  top: 37px;
+  z-index: 5;
+}
+.iphoneVerticalSpeaker {
+  position: absolute;
+  left: 201px;
+  top: 56px;
+  z-index: 5;
+}
+.iphoneVerticalButton {
+  position: absolute;
+  left: 197px;
+  top: 428px;
+  z-index: 5;
+}
+.iphoneVerticalShadow {
+  position: absolute;
+  left: 112px;
+  top: 22px;
+  z-index: 2;
+}
+
+.iphoneHorizontalBlock {
+  position: relative;
+  left: 465px;
+  top: -491px;
+  width: 400px;
+  height: 481px;
+  margin: 0;
+}
+.iphoneHorizontal-base {
+  position: absolute;
+  left: -41px;
+  top: 152px;
+  z-index: 3;
+}
+.iphoneHorizontalShadow {
+  position: absolute;
+  left: -39px;
+  top: 153px;
+  z-index: 2;
+}
+.iphoneHorizontalSrceen {
+  position: absolute;
+  left: 17px;
+  top: 164px;
+  z-index: 4;
+}
+.iphoneHorizontalCam {
+  position: relative;
+  left: 391px;
+  top: 252px;
+  z-index: 5;
+  transform: rotate(90deg);
+}
+.iphoneHorizontalSpeaker {
+  position: absolute;
+  left: 376px;
+  top: 242px;
+  z-index: 5;
+}
+.iphoneHorizontalButton {
+  position: absolute;
+  left: -33px;
+  top: 238px;
+  z-index: 5;
+  transform: rotate(90deg);
+}
+.iphoneHorizontalSrceenBackground {
+  position: absolute;
+  left: 20px;
+  top: 167px;
+  width: 333px;
+  height: 188px;
+  background-image: url('assets/img/BackHorizontal.png');
+  background-position: -125px -119px;
+  z-index: 5;
+}
+
+.sliderBlcok-shadow {
   width: 1020px;
   height: 15px;
   background-color: #ea676b;
 }
-

@@ -1,0 +1,300 @@
+@import 'fonts.css';
+
+body {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.portfolio{
+  position: relative;
+  width: 1020px;
+  height: 870px;
+  background-color: #2d303a;
+}
+.portfolio-heading,
+.section-heading{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato-Bold-B";
+  text-align: left;
+}
+.portfolio-heading{
+  top: 69px;
+  left: 40px;
+  letter-spacing: 0.15px;
+}
+.section-heading{
+  top: 68px;
+  left: 40px;
+  letter-spacing: 0.15px;
+}
+.portfolio-moto,
+.section-moto,
+.section-moto2{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato Light A";
+  text-align: left;
+}
+.portfolio-moto{
+  top: 96px;
+  left: 40px;
+}
+.section-moto{
+  top: 95px;
+  left: 40px;
+  word-spacing: 1px;
+  letter-spacing: 0.02px;
+}
+.section-moto2{
+  top: 68px;
+  left: 40px;
+}
+.portfolio-buttons{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 287px;
+  top: 80px;
+  left: 41px;
+}
+.all-button,
+.graphic-button,
+.web-button,
+.artwork-button{
+  height: 22px;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  border: 1px solid #666d89;
+  font-size: 12px;
+  line-height: 18px;
+  color: #767e9e;
+  font-family: "Lato Light B";
+  text-align: left;
+}
+.all-button:hover,
+.graphic-button:hover,
+.web-button:hover,
+.artwork-button:hover{
+  border: 1px solid #c5c5c5;
+  color: #ffffff;
+  cursor: pointer;
+}
+.all-button{
+  width: 29px;
+  border: 1px solid #c5c5c5;
+  color: #ffffff;
+}
+.artwork-button{
+  width: 57px;
+}
+.web-button{
+  width: 78px;
+}
+.graphic-button{
+  width: 93px;
+}
+.portfolio-pictures{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 960px;
+  height: 601px;
+  flex-wrap: wrap;
+  top: 99px;
+  left: 30px;
+}
+.first-column,
+.second-column,
+.third-column,
+.fourth-column{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.picture-block{
+  width: 220px;
+  height: 187px;
+  margin: 0px 5px;
+  background-color: #464b5e;
+}
+.picture-block__1{
+  background-image: url('assets/img/Project\ \(7\).png');
+  background-position: -8px -11px;
+}
+.picture-block__2{
+  background-image: url('assets/img/Project\ \(5\).png');
+  background-position: -82px -43px;
+}
+.picture-block__3{
+  background-image: url('assets/img/Layer\ 9.png');
+  background-position: -11px -1px;
+}
+.picture-block__4{
+  background-image: url('assets/img/Project\ \(1\).png');
+  background-position: -24px -2px;
+}
+.picture-block__5{
+  background-image: url('assets/img/Project55.png');
+  background-position: -10px -16px;
+}
+.picture-block__6{
+  background-image: url('assets/img/Project\ \(4\).png');
+  background-position: -16px -4px;
+}
+.picture-block__7{
+  background-image: url('assets/img/Layer\ 11.png');
+  background-position: -31px -39px;
+}
+.picture-block__8{
+  background-image: url('assets/img/Layer\ 8.png');
+  background-position: -24px -32px;
+}
+.picture-block__9{
+  background-image: url('assets/img/Project\ \(6\).png');
+  background-position: -16px -2px;
+}
+.picture-block__10{
+  background-image: url('assets/img/Project\ \(3\).png');
+  background-position: -141px -113px;
+}
+.picture-block__11{
+  background-image: url('assets/img/Project\ \(2\).png');
+  background-position: -144px -175px;
+}
+.picture-block__12{
+  background-image: url('assets/img/Project.png');
+  background-position: -36px -60px;
+}
+.portfolio-shadow{
+  position: relative;
+  top: 166px;
+  width: 1020px;
+  height: 6px;
+  background-color: #323746;
+}
+.about-us{
+  position: relative;
+  width: 1020px;
+  height: 728px;
+  background-color: #f2f2f2;
+}
+
+.personal-block{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 500px;
+  top: 86px;
+  left: 40px;
+}
+.person-info-block:nth-child(2){
+  margin-left: -2px;
+}
+
+.person-photo{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #464b5e;
+}
+.photo__1{
+ background-image: url('assets/img/photo\ \(2\).png');
+}
+.photo__2{
+  background-image: url('assets/img/photo\ \(1\).png');
+}
+.photo__3{
+  background-image: url('assets/img/photo.png');
+}
+.person-name {
+  position: relative;
+  top: -1px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato-Bold-B";
+  text-align: left;
+}
+.name__1{
+  left: -1px;
+  letter-spacing: 0.05px;
+}
+.name__3{
+  left: -1px;
+  letter-spacing: 0.1px;
+}
+.person-about{
+  position: relative;
+  top: -9px;
+  width: 300px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato Light B";
+  text-align: left;
+}
+.about__1{
+  left: -1px;
+  word-spacing: 0.7px;
+}
+.about-2__1{
+  top: -22px;
+  letter-spacing: 0.05px;
+  word-spacing: 0.4px;
+}
+.about__2{
+  word-spacing: 2px;
+  letter-spacing: 0.04px;
+
+}
+.about-2__2{
+  top: -22px;
+  word-spacing: 1.1px;
+  letter-spacing: 0.01px;
+}
+.about__3{
+  word-spacing: 1.5px;
+  letter-spacing: 0.02px;
+}
+.about-2__3{
+  top: -22px;
+  word-spacing: 1px;
+}
+.socials-block{
+  position: relative;
+  top: -12px;
+  display: flex;
+  justify-content: space-between;
+  width: 154px;
+}
+.social__3{
+  left: -1px;
+}
+.social-facebook:hover,
+.google:hover,
+.twitter:hover,
+.linkedIn:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.about-us-shadow{
+  position: relative;
+  top: 146px;
+  width: 1020px;
+  height: 6px;
+  background-color: #ffffff;
+}

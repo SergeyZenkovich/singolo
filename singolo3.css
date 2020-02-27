@@ -1,0 +1,155 @@
+@import 'fonts.css';
+
+body {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.connect{
+  position: relative;
+  width: 1020px;
+  height: 648px;
+  background-color: #f06c64;
+}
+.connect-shadow{
+  position: relative;
+  top: 142px;
+  width: 1020px;
+  height: 6px;
+  background-color: #ea676b;  
+}
+.connect-heading{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato-Bold-B";
+  text-align: left;
+}
+.connect-moto{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato Light A";
+  text-align: left;
+}
+
+.connect-form{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 620px;
+  height: 400px;
+}
+.connect-input__name,
+.connect-input__email,
+.connect-input__subject{
+  width: 619px;
+  height: 38px;
+}
+.connect-input__textArea{
+  width: 619px;
+  height: 202px;
+}
+.connect-input__name,
+.connect-input__email,
+.connect-input__subject,
+.connect-input__textArea,
+.connect-input__submit{
+  border-radius: 5px;
+  background-color: #d6564f;
+  border-color: transparent;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato Light B";
+  text-align: left;
+}
+.connect-input__submit{
+  border-radius: 5px;
+  background-color:#f48c8f ;
+  border-color: transparent;
+  font-size: 12px;
+  line-height: 22px;
+  color: #d6564f;
+  font-family: 'Lato-Bold-B';
+  text-align: center;
+}
+.connect-input__submit:hover{
+  cursor: pointer;
+}
+.connect-input__name::placeholder,
+.connect-input__email::placeholder,
+.connect-input__subject::placeholder,
+.connect-input__textArea::placeholder{
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato Light B";
+  text-align: left;
+}
+.connect-contactBlock{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactInfo-heading{
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato-Bold-B";
+  text-align: left;
+}
+
+.contactInfo-paragraph
+{
+  width: 300px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato Light B";
+  text-align: left;
+}
+.smallInfoBlock{
+  width: 160px;
+  height: 60px;
+}
+.adressInfo,
+.phoneInfo,
+.emailInfo{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato Light B";
+  text-align: left;
+}
+.adressIcon::before{
+  content: url('assets/img/location.png');
+  width: 7px;
+  height: 11px;
+  margin-right: 25px;
+}
+.phoneIcon::before{
+  content: url('assets/img/phoneicon.png');
+  width: 11px;
+  height: 11px;
+  margin-right: 25px;
+}
+.emailIcon::before{
+  content: url('assets/img/mail.png');
+  width: 13px;
+  height: 8px;
+  margin-right: 25px;
+}
+
+

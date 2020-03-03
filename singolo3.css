@@ -14,7 +14,7 @@ body {
 }
 .connect-shadow{
   position: relative;
-  top: 142px;
+  top: 0px;
   width: 1020px;
   height: 6px;
   background-color: #ea676b;  
@@ -88,6 +88,7 @@ body {
   color: #f48c8f;
   font-family: "Lato Light B";
   text-align: left;
+  overflow: hidden;
 }
 .connect-input__email{
   top: 2px;
@@ -98,7 +99,7 @@ body {
 
 .connect-input__submit{
   border-radius: 5px;
-  background-color:#f48c8f ;
+  background-color:#f7989c;
   border-color: transparent;
   font-size: 12px;
   line-height: 22px;
@@ -108,21 +109,35 @@ body {
 }
 .connect-input__submit:hover{
   cursor: pointer;
+  background-color:#f7b8ba ;
 }
 .connect-input__name::placeholder,
 .connect-input__email::placeholder,
 .connect-input__subject::placeholder,
 .connect-input__textArea::placeholder{
+  position: relative;
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
   font-family: "Lato Light B";
   text-align: left;
+  letter-spacing: 0.1px;
+}
+.connect-input__name::placeholder,
+.connect-input__email::placeholder,
+.connect-input__subject::placeholder{
+  top: -1px;
+  left: 13px;
+}
+.connect-input__textArea::placeholder{
+  top: 4px;
+  left: 11px; 
+  letter-spacing: 0.17px;
 }
 .connect-contactBlock{
   position: relative;
   top: 85px;
-  left: 23px; 
+  left: 15px; 
   display: flex;
   justify-content: space-around;
 }
@@ -135,8 +150,12 @@ body {
   text-align: left;
 }
 
-.contactInfo-paragraph
+.contactInfo-paragraph,
+.contactInfo-paragraph2,
+.contactInfo-paragraph3,
+.contactInfo-paragraph4
 {
+  position: relative;
   width: 300px;
   font-size: 12px;
   line-height: 22px;
@@ -144,13 +163,46 @@ body {
   font-family: "Lato Light B";
   text-align: left;
 }
+.contactInfo-paragraph{
+  top: -8px;
+  left: 0px;
+  letter-spacing: 0.12px;
+}
+.contactInfo-paragraph2{
+  top: -21px;
+  left: 0px;
+  letter-spacing: 0.18px;
+}
+.contactInfo-paragraph3{
+  top: -33px;
+  left: 0px;
+  letter-spacing: 0.13px;
+  word-spacing: 1.15px;
+}
+.contactInfo-paragraph4{
+  top: -45px;
+  left: 0px;
+  letter-spacing: 0.14px;
+}
 .smallInfoBlock{
+  position: relative;
+  top: -36px;
+  left: 0px;
   width: 160px;
   height: 60px;
+}
+.connect-contactInfoBlock{
+  position: relative;
+  top: -18px;
+  left: -30px;
+}
+.contactInfo-heading{
+  letter-spacing: 0.05px;
 }
 .adressInfo,
 .phoneInfo,
 .emailInfo{
+  position: relative;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
@@ -160,23 +212,45 @@ body {
   font-family: "Lato Light B";
   text-align: left;
 }
+.adressInfo{
+  top: 0px;
+  left: 3px;
+  letter-spacing: 0.07px;
+}
+.phoneInfo{
+  width: 120px;
+  top: -1px;
+  left: 1px;
+  padding-right: 40px;
+}
+.emailInfo{
+  top: -1px;
+  left: 0px;
+  letter-spacing: 0.15px;
+}
 .adressIcon::before{
+  position: relative;
+  top: 1px;
   content: url('assets/img/location.png');
   width: 7px;
   height: 11px;
-  margin-right: 25px;
+  margin-right: 13px;
 }
 .phoneIcon::before{
+  position: relative;
+  top: 1px;
   content: url('assets/img/phoneicon.png');
   width: 11px;
   height: 11px;
-  margin-right: 25px;
+  margin-right: 11px;
 }
 .emailIcon::before{
+  position: relative;
+  top: 1px;
   content: url('assets/img/mail.png');
   width: 13px;
   height: 8px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 .footer{
   width: 1020px;
@@ -186,7 +260,24 @@ body {
 .footer-bar{
   display: flex;
   justify-content: space-around;
+  font-family: 'Lato Light B';
   color: #767e9e;
+}
+.copyright{
+  position: relative;
+  top: 18px;
+  left: -154px;
+  font-size: 12px;
+  letter-spacing: -0.07px;
+}
+.socials-block{
+  position: relative;
+  top: 21px;
+  left: 159px;
+  width: 160px;
+}
+.socials-block img{
+  margin-right: 3px;
 }
 
 

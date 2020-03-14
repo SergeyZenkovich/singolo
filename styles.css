@@ -63,10 +63,20 @@ body {
   text-align: left;
   text-transform: uppercase;
 }
-.navbar-elem:hover {
-  cursor: pointer;
+.navbar-elem .navbar-elem__active {
   color: #f06c64;
-  background-color: #f2f2f2;
+}
+.navbarLink {
+  color: #ffffff;
+  font-family: 'Lato-Bold-A';
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar-elem:hover a {
+  cursor: pointer;
+  color: #f06c6455;
+  background-color: #f2f2f222;
 }
 .navbar-elem__dot {
   display: inline-block;
@@ -77,164 +87,254 @@ body {
   text-align: left;
   color: #494e62;
 }
-.navbar-elem__active {
-  display: inline-block;
-  position: relative;
-  left: 0px;
-  top: 0px;
-  padding: 12px 8px;
-  font-size: 12px;
-  line-height: 8px;
-  letter-spacing: -0.5px;
-  color: #f06c64;
-  font-family: 'Lato-Bold-B';
-  text-align: left;
-  text-transform: uppercase;
-}
-.navbar-elem__active:hover {
-  cursor: pointer;
-  color: #f06c64;
-  background-color: #f2f2f2;
-}
+
 .main {
   width: 1020px;
   height: 1100px;
 }
-.sliderBlock {
+.sliderMainBlock {
   position: relative;
   width: 1020px;
   height: 594px;
+  overflow: hidden;
+}
+.sliderBlock {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  width: 1020px;
+  height: 594px;
   background-color: #f06c64;
+  opacity: 1;
+  z-index: 100;
+  transition: cubic-bezier(1, 0, 0, 1);
+  transition-duration: 0.5s;
+}
+.sliderBlock2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: inline-block;
+  width: 1020px;
+  height: 594px;
+  background-color: #648bf0;
+  z-index: 50;
 }
 .prev,
 .next {
-  position: relative;
+  position: absolute;
+  padding: 13px;
+  top: 300px;
+  z-index: 150;
 }
 .prev {
-  top: 281px;
-  left: 42px;
-  z-index: 5;
+  left: 20px;
 }
 .prev:hover {
   cursor: pointer;
-  background-color: #767e9e;
+  border-radius: 50%;
+  background-color: #d9dceb;
 }
 .next {
-  top: -712px;
   left: 964px;
 }
 .next:hover {
   cursor: pointer;
-  background-color: #767e9e;
+  border-radius: 50%;
+  background-color: #d9dceb;
 }
 .iphoneVerticalBlock {
   position: relative;
-  left: 0px;
-  top: 0px;
-  width: 400px;
-  height: 481px;
+  left: 107px;
+  top: 70px;
+  width: 218px;
+  height: 461px;
 }
+.iphoneVerticalBlockBlue {
+  position: relative;
+  display: inline-block;
+  left: 260px;
+  top: 50px;
+  width: 350px;
+  height: 481px;
+  background-color: rgba(0, 0, 255, 0.2);
+  box-shadow: 0px 0px 200px 500px rgba(0, 0, 255, 0.2);
+  z-index: 20;
+}
+.iphoneSmallVerticalBlock,
+.iphoneSmallVerticalBlock2 {
+  position: relative;
+  display: inline-block;
+  left: 167px;
+  top: -50px;
+  width: 150px;
+  height: 250px;
+  z-index: 10;
+}
+.iphoneSmallVerticalBlock2 {
+  left: 13px;
+  top: -50px;
+}
+
 .iphoneVertical-base {
   position: absolute;
-  left: 110px;
-  top: 21px;
+  left: 0px;
+  top: 0px;
   width: 218px;
   height: 461px;
   z-index: 3;
 }
+.iphoneSmallVertical-base {
+  position: absolute;
+  left: 110px;
+  top: 21px;
+  width: 140px;
+  height: 300px;
+  z-index: 3;
+}
 .iphoneVerticalSrceen {
   position: absolute;
-  left: 123px;
-  top: 84px;
+  left: 13px;
+  top: 55px;
   width: 194px;
   height: 339px;
   z-index: 4;
 }
-.iphoneVerticalSrceenBackground {
+.iphoneSmallVerticalSrceen {
   position: absolute;
-  left: 126px;
-  top: 87px;
+  left: 116px;
+  top: 56px;
+  width: 127px;
+  height: 221px;
+  z-index: 4;
+}
+.iphoneVerticalSrceenBackground,
+.iphoneVerticalSrceenBackgroundBlue {
+  position: absolute;
+  left: 16px;
+  top: 58px;
   width: 188px;
   height: 333px;
+  z-index: 5;
+}
+.iphoneVerticalSrceenBackground {
   background-image: url('assets/img/VerticalBackground.png');
   background-position: -14px -135px;
+}
+.iphoneVerticalSrceenBackgroundBlue {
+  background-image: url('assets/img/slider-second/phone-vertical-display.jpg');
+  background-position: -10px -10px;
+}
+.iphoneSmallVerticalSrceenBackgroundBlue {
+  background-image: url('assets/img/slider-second/phone-vertical-display2.png');
+  background-position: 0px 0px;
+}
+
+.iphoneSmallVerticalSrceenBackgroundBlue {
+  position: absolute;
+  left: 118px;
+  top: 58px;
+  width: 123px;
+  height: 217px;
   z-index: 5;
 }
-.iphoneVerticalCam {
+
+.iphoneVerticalCam,
+.iphoneSmallVerticalCam {
   position: absolute;
-  left: 213px;
-  top: 37px;
+  left: 104px;
+  top: 17px;
   z-index: 5;
 }
-.iphoneVerticalSpeaker {
+.iphoneSmallVerticalCam {
+  left: 178px;
+  top: 31px;
+}
+.iphoneVerticalSpeaker,
+.iphoneSmallVerticalSpeaker {
   position: absolute;
-  left: 201px;
-  top: 56px;
+  left: 91px;
+  top: 35px;
   z-index: 5;
 }
-.iphoneVerticalButton {
+.iphoneSmallVerticalSpeaker {
+  left: 169px;
+  top: 42px;
+}
+.iphoneVerticalButton,
+.iphoneSmallVerticalButton {
   position: absolute;
-  left: 197px;
-  top: 428px;
+  left: 87px;
+  top: 402px;
   z-index: 5;
 }
-.iphoneVerticalShadow {
+.iphoneSmallVerticalButton {
+  left: 167px;
+  top: 284px;
+}
+.iphoneVerticalShadow,
+.iphoneSmallVerticalShadow {
   position: absolute;
-  left: 112px;
-  top: 22px;
+  left: 3px;
+  top: 1px;
   z-index: 2;
+}
+.iphoneSmallVerticalShadow {
+  left: 110px;
+  top: 21px;
 }
 
 .iphoneHorizontalBlock {
   position: relative;
-  left: 465px;
-  top: -491px;
-  width: 400px;
-  height: 481px;
+  left: 407px;
+  top: -260px;
+  width: 461px;
+  height: 218px;
   margin: 0;
 }
 .iphoneHorizontal-base {
   position: absolute;
-  left: -41px;
-  top: 152px;
+  left: 1px;
+  top: 0px;
   z-index: 3;
 }
 .iphoneHorizontalShadow {
   position: absolute;
-  left: -39px;
-  top: 153px;
+  left: -23px;
+  top: 1px;
   z-index: 2;
 }
 .iphoneHorizontalSrceen {
   position: absolute;
-  left: 17px;
-  top: 164px;
+  left: 63px;
+  top: 13px;
   z-index: 4;
 }
 .iphoneHorizontalCam {
   position: relative;
-  left: 391px;
-  top: 252px;
+  left: 436px;
+  top: 97px;
   z-index: 5;
   transform: rotate(90deg);
 }
 .iphoneHorizontalSpeaker {
   position: absolute;
-  left: 376px;
-  top: 242px;
+  left: 419px;
+  top: 86px;
   z-index: 5;
 }
 .iphoneHorizontalButton {
   position: absolute;
-  left: -33px;
-  top: 238px;
+  left: 11px;
+  top: 89px;
   z-index: 5;
   transform: rotate(90deg);
 }
 .iphoneHorizontalSrceenBackground {
   position: absolute;
-  left: 20px;
-  top: 167px;
+  left: 66px;
+  top: 16px;
   width: 333px;
   height: 188px;
   background-image: url('assets/img/BackHorizontal.png');
@@ -596,10 +696,7 @@ body {
   top: 79px;
   left: 41px;
 }
-.all-button,
-.graphic-button,
-.web-button,
-.artwork-button {
+.portfolioButton {
   height: 22px;
   border-radius: 5px;
   background-color: #2d303a;
@@ -614,14 +711,16 @@ body {
 .graphic-button:hover,
 .web-button:hover,
 .artwork-button:hover {
+  border: 1px solid #c5c5c577;
+  color: #ffffff88;
+  cursor: pointer;
+}
+.activeButton {
   border: 1px solid #c5c5c5;
   color: #ffffff;
-  cursor: pointer;
 }
 .all-button {
   width: 29px;
-  border: 1px solid #c5c5c5;
-  color: #ffffff;
 }
 .artwork-button {
   width: 57px;
@@ -656,6 +755,9 @@ body {
   height: 187px;
   margin: 0px 5px;
   background-color: #464b5e;
+}
+.active-picture-block {
+  border: 5px solid #f06c64;
 }
 .picture-block__1 {
   background-image: url('assets/img/Project\ \(7\).png');
@@ -1102,4 +1204,49 @@ body {
 }
 .socials-block-footer img {
   margin-right: 3px;
+}
+.notificationBlock {
+  padding: 10px;
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  width: 450px;
+  height: 250px;
+  background-color: #d9dceb;
+  z-index: 100;
+}
+.notificationParagraph {
+  margin: 0;
+  padding: 5px;
+  font-size: 28px;
+  line-height: 28px;
+  word-spacing: 6px;
+  color: #22242b;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+.subjectNotification,
+.descriptionNotification {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: 6px;
+  color: #22242b;
+  font-family: 'Comfortaa', cursive;
+  text-align: left;
+}
+#okButton {
+  position: absolute;
+  top: 210px;
+  left: 380px;
+  width: 50px;
+  height: 30px;
+  background-color: forestgreen;
+  color: #ffffff;
+  font-family: 'Lato Light B';
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
 }

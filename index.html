@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singolo</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -16,92 +20,210 @@
           </span>
         </div>
         <nav class="navbar">
-          <div class="navbar-elem__active">HOME</div>
+          <div class="navbar-elem">
+            <a href="#home" id="homeLink" class="navbarLink">HOME</a>
+          </div>
           <div class="navbar-elem__dot">·</div>
-          <div class="navbar-elem">SERVICES</div>
+          <div class="navbar-elem">
+            <a href="#services" id="servicesLink" class="navbarLink"
+              >SERVICES</a
+            >
+          </div>
           <div class="navbar-elem__dot">·</div>
-          <div class="navbar-elem">PORTFOLIO</div>
+          <div class="navbar-elem">
+            <a href="#portfolio" id="portfolioLink" class="navbarLink"
+              >PORTFOLIO</a
+            >
+          </div>
           <div class="navbar-elem__dot">·</div>
-          <div class="navbar-elem">ABOUT</div>
+          <div class="navbar-elem">
+            <a href="#about" id="aboutLink" class="navbarLink">ABOUT</a>
+          </div>
           <div class="navbar-elem__dot">·</div>
-          <div class="navbar-elem">CONTACT</div>
+          <div class="navbar-elem">
+            <a href="#contact" id="contactLink" class="navbarLink">CONTACT</a>
+          </div>
         </nav>
       </div>
       <div class="header-shadow"></div>
     </header>
     <main class="main">
-      <div class="sliderBlock">
+      <div class="sliderMainBlock" id="home">
         <img class="prev" src="assets/img/prev.png" alt="" />
-        <div class="iphoneVerticalBlock">
-          <img
-            class="iphoneVerticalShadow"
-            src="assets/img/Shadow.png"
-            alt=""
-          />
-          <img
-            class="iphoneVerticalCam"
-            src="assets/img/CamVertical.png"
-            alt=""
-          />
-          <img
-            class="iphoneVerticalSpeaker"
-            src="assets/img/SpeakerVertical.png"
-            alt=""
-          />
-          <img
-            class="iphoneVerticalButton"
-            src="assets/img/Home ButtonVertical.png"
-            alt=""
-          />
-          <img
-            class="iphoneVertical-base"
-            src="assets/img/BaseVertical.png"
-            alt=""
-          />
-          <img
-            class="iphoneVerticalSrceen"
-            src="assets/img/ScreenVertical.png"
-            alt=""
-          />
-          <div class="iphoneVerticalSrceenBackground"></div>
-        </div>
-        <div class="iphoneHorizontalBlock">
-          <img
-            class="iphoneHorizontal-base"
-            src="assets/img/BaseH.png"
-            alt=""
-          />
-          <img
-            class="iphoneHorizontalShadow"
-            src="assets/img/ShadowH.png"
-            alt=""
-          />
-          <img
-            class="iphoneHorizontalSrceen"
-            src="assets/img/ScreenH.png"
-            alt=""
-          />
-          <img
-            class="iphoneHorizontalCam"
-            src="assets/img/CamVertical.png"
-            alt=""
-          />
-          <img
-            class="iphoneHorizontalSpeaker"
-            src="assets/img/SpeakerH.png"
-            alt=""
-          />
-          <img
-            class="iphoneHorizontalButton"
-            src="assets/img/Home ButtonVertical.png"
-            alt=""
-          />
-          <div class="iphoneHorizontalSrceenBackground"></div>
+        <div class="sliderBlock">
+          <div class="iphoneVerticalBlock">
+            <img
+              class="iphoneVerticalShadow"
+              src="assets/img/Shadow.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalCam"
+              src="assets/img/CamVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalSpeaker"
+              src="assets/img/SpeakerVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalButton"
+              src="assets/img/Home ButtonVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVertical-base"
+              src="assets/img/BaseVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalSrceen"
+              src="assets/img/ScreenVertical.png"
+              alt=""
+            />
+            <div class="iphoneVerticalSrceenBackground"></div>
+          </div>
+          <div class="iphoneHorizontalBlock">
+            <img
+              class="iphoneHorizontal-base"
+              src="assets/img/BaseH.png"
+              alt=""
+            />
+            <img
+              class="iphoneHorizontalShadow"
+              src="assets/img/ShadowH.png"
+              alt=""
+            />
+            <img
+              class="iphoneHorizontalSrceen"
+              src="assets/img/ScreenH.png"
+              alt=""
+            />
+            <img
+              class="iphoneHorizontalCam"
+              src="assets/img/CamVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneHorizontalSpeaker"
+              src="assets/img/SpeakerH.png"
+              alt=""
+            />
+            <img
+              class="iphoneHorizontalButton"
+              src="assets/img/Home ButtonVertical.png"
+              alt=""
+            />
+            <div class="iphoneHorizontalSrceenBackground"></div>
+          </div>
         </div>
         <img class="next" src="assets/img/next.png" alt="" />
+        <div class="sliderBlock2">
+          <div class="iphoneSmallVerticalBlock">
+            <img
+              class="iphoneSmallVerticalShadow"
+              src="assets/img/slider-second/phone-vertical-shadow2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalCam"
+              src="assets/img/slider-second/Camera2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalSpeaker"
+              src="assets/img/slider-second/Speaker2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalButton"
+              src="assets/img/slider-second/Home2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVertical-base"
+              src="assets/img/slider-second/Body2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalSrceen"
+              src="assets/img/slider-second/Screen2.png"
+              alt=""
+            />
+            <div class="iphoneSmallVerticalSrceenBackgroundBlue"></div>
+          </div>
+          <div class="iphoneVerticalBlockBlue">
+            <img
+              class="iphoneVerticalShadow"
+              src="assets/img/Shadow.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalCam"
+              src="assets/img/CamVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalSpeaker"
+              src="assets/img/SpeakerVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalButton"
+              src="assets/img/Home ButtonVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVertical-base"
+              src="assets/img/BaseVertical.png"
+              alt=""
+            />
+            <img
+              class="iphoneVerticalSrceen"
+              src="assets/img/ScreenVertical.png"
+              alt=""
+            />
+            <div class="iphoneVerticalSrceenBackgroundBlue"></div>
+          </div>
+
+          <div class="iphoneSmallVerticalBlock2">
+            <img
+              class="iphoneSmallVerticalShadow"
+              src="assets/img/slider-second/phone-vertical-shadow2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalCam"
+              src="assets/img/slider-second/Camera2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalSpeaker"
+              src="assets/img/slider-second/Speaker2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalButton"
+              src="assets/img/slider-second/Home2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVertical-base"
+              src="assets/img/slider-second/Body2.png"
+              alt=""
+            />
+            <img
+              class="iphoneSmallVerticalSrceen"
+              src="assets/img/slider-second/Screen2.png"
+              alt=""
+            />
+            <div class="iphoneSmallVerticalSrceenBackgroundBlue"></div>
+          </div>
+        </div>
       </div>
       <div class="sliderBlcok-shadow"></div>
-      <div class="sericesBlock">
+      <div class="sericesBlock" id="services">
         <h2 class="headingServices">Our Services</h2>
         <p class="paragraphServices">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -214,17 +336,17 @@
       </div>
       <div class="sericesBlock-shadow"></div>
     </main>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="portfolio-heading">Portfolio</h2>
       <p class="portfolio-moto">
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
         lacinia odio sem nec elit.
       </p>
       <div class="portfolio-buttons">
-        <button class="all-button">All</button>
-        <button class="web-button">Web Design</button>
-        <button class="graphic-button">Graphic Design</button>
-        <button class="artwork-button">Artwork</button>
+        <button class="all-button portfolioButton">All</button>
+        <button class="web-button portfolioButton">Web Design</button>
+        <button class="graphic-button portfolioButton">Graphic Design</button>
+        <button class="artwork-button portfolioButton">Artwork</button>
       </div>
       <div class="portfolio-pictures">
         <div class="first-column">
@@ -250,7 +372,7 @@
       </div>
       <div class="portfolio-shadow"></div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
       <h2 class="section-heading">About Us</h2>
       <p class="section-moto">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -312,7 +434,7 @@
       </div>
       <div class="about-us-shadow"></div>
     </section>
-    <section class="connect">
+    <section class="connect" id="contact">
       <h2 class="connect-heading">Get a Quote</h2>
       <div class="connect-moto">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -398,5 +520,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

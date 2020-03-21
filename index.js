@@ -111,7 +111,12 @@ Pictures.addEventListener('click', event => {
     previousActive.classList.remove('active-picture-block');
   }
   let active = event.target;
-  active.classList.add('active-picture-block');
+  if (active.classList[0] === 'picture-block') {
+    active.classList.add('active-picture-block');
+    if (previousActive === active) {
+      active.classList.remove('active-picture-block');
+    }
+  }
 });
 Submit.addEventListener('click', event => {
   event.preventDefault();
@@ -133,5 +138,9 @@ Submit.addEventListener('click', event => {
   );
   okButton.addEventListener('click', () => {
     document.querySelector('.notificationBlock').remove();
+    document.querySelector('#iEmail').value = '';
+    document.querySelector('#iName').value = '';
+    document.querySelector('#iSubject').value = '';
+    document.querySelector('#tDescribe').value = '';
   });
 });

@@ -13,10 +13,18 @@ const verticalPhone = document.querySelector('.iphoneVerticalBlock');
 const horizontalPhone = document.querySelector('.iphoneHorizontalBlock');
 
 const Pictures = document.querySelector('.portfolio-pictures');
-const FirstColumn = document.querySelector('.first-column');
-const SecondColumn = document.querySelector('.second-column');
-const ThirdColumn = document.querySelector('.third-column');
-const FourthColumn = document.querySelector('.fourth-column');
+const FirstPicture = document.querySelector('.picture-block__1');
+const SecondPicture = document.querySelector('.picture-block__2');
+const ThirdPicture = document.querySelector('.picture-block__3');
+const FourthPicture = document.querySelector('.picture-block__4');
+const FivePicture = document.querySelector('.picture-block__5');
+const SixPicture = document.querySelector('.picture-block__6');
+const SevenPicture = document.querySelector('.picture-block__7');
+const EightPicture = document.querySelector('.picture-block__8');
+const NinePicture = document.querySelector('.picture-block__9');
+const TenPicture = document.querySelector('.picture-block__10');
+const ElPicture = document.querySelector('.picture-block__11');
+const TwPicture = document.querySelector('.picture-block__12');
 const ButtonsBlock = document.querySelector('.portfolio-buttons');
 const Submit = document.querySelector('.connect-input__submit');
 const Connect = document.querySelector('.connect');
@@ -37,7 +45,7 @@ function switchSlide() {
       sliderBlock1.style.display = 'none';
     }, 500);
   } else {
-    sliderBlock1.style.display = 'block';
+    sliderBlock1.style.display = 'flex';
     setTimeout(() => {
       sliderBlock1.style.opacity = '1';
     }, 100);
@@ -73,34 +81,68 @@ ButtonsBlock.addEventListener('click', event => {
   let active = event.target;
   if (active.classList[0] === 'all-button') {
     Pictures.innerHTML = '';
-    Pictures.insertAdjacentElement('afterbegin', FourthColumn);
-    Pictures.insertAdjacentElement('afterbegin', ThirdColumn);
-    Pictures.insertAdjacentElement('afterbegin', SecondColumn);
-    Pictures.insertAdjacentElement('afterbegin', FirstColumn);
-
+    Pictures.insertAdjacentElement('afterbegin', TwPicture);
+    Pictures.insertAdjacentElement('afterbegin', ElPicture);
+    Pictures.insertAdjacentElement('afterbegin', TenPicture);
+    Pictures.insertAdjacentElement('afterbegin', NinePicture);
+    Pictures.insertAdjacentElement('afterbegin', EightPicture);
+    Pictures.insertAdjacentElement('afterbegin', SevenPicture);
+    Pictures.insertAdjacentElement('afterbegin', SixPicture);
+    Pictures.insertAdjacentElement('afterbegin', FivePicture);
+    Pictures.insertAdjacentElement('afterbegin', FourthPicture);
+    Pictures.insertAdjacentElement('afterbegin', ThirdPicture);
+    Pictures.insertAdjacentElement('afterbegin', SecondPicture);
+    Pictures.insertAdjacentElement('afterbegin', FirstPicture);
     active.classList.add('activeButton');
   } else if (active.classList[0] === 'web-button') {
     Pictures.innerHTML = '';
-    Pictures.insertAdjacentElement('afterbegin', ThirdColumn);
-    Pictures.insertAdjacentElement('afterbegin', SecondColumn);
-    Pictures.insertAdjacentElement('afterbegin', FirstColumn);
-    Pictures.insertAdjacentElement('afterbegin', FourthColumn);
+
+    Pictures.insertAdjacentElement('afterbegin', FourthPicture);
+    Pictures.insertAdjacentElement('afterbegin', ThirdPicture);
+    Pictures.insertAdjacentElement('afterbegin', SecondPicture);
+    Pictures.insertAdjacentElement('afterbegin', FirstPicture);
+    Pictures.insertAdjacentElement('afterbegin', EightPicture);
+    Pictures.insertAdjacentElement('afterbegin', SevenPicture);
+    Pictures.insertAdjacentElement('afterbegin', SixPicture);
+    Pictures.insertAdjacentElement('afterbegin', FivePicture);
+    Pictures.insertAdjacentElement('afterbegin', TwPicture);
+    Pictures.insertAdjacentElement('afterbegin', ElPicture);
+    Pictures.insertAdjacentElement('afterbegin', TenPicture);
+    Pictures.insertAdjacentElement('afterbegin', NinePicture);
 
     active.classList.add('activeButton');
   } else if (active.classList[0] === 'artwork-button') {
     Pictures.innerHTML = '';
-    Pictures.insertAdjacentElement('afterbegin', SecondColumn);
-    Pictures.insertAdjacentElement('afterbegin', FirstColumn);
-    Pictures.insertAdjacentElement('afterbegin', FourthColumn);
-    Pictures.insertAdjacentElement('afterbegin', ThirdColumn);
+    Pictures.insertAdjacentElement('afterbegin', FivePicture);
+    Pictures.insertAdjacentElement('afterbegin', TwPicture);
+    Pictures.insertAdjacentElement('afterbegin', ElPicture);
+    Pictures.insertAdjacentElement('afterbegin', TenPicture);
+    Pictures.insertAdjacentElement('afterbegin', FourthPicture);
+    Pictures.insertAdjacentElement('afterbegin', SevenPicture);
+    Pictures.insertAdjacentElement('afterbegin', SixPicture);
+    Pictures.insertAdjacentElement('afterbegin', ThirdPicture);
+    Pictures.insertAdjacentElement('afterbegin', SecondPicture);
+    Pictures.insertAdjacentElement('afterbegin', FirstPicture);
+    Pictures.insertAdjacentElement('afterbegin', EightPicture);
+    Pictures.insertAdjacentElement('afterbegin', NinePicture);
 
     active.classList.add('activeButton');
   } else {
     Pictures.innerHTML = '';
-    Pictures.insertAdjacentElement('afterbegin', FirstColumn);
-    Pictures.insertAdjacentElement('afterbegin', FourthColumn);
-    Pictures.insertAdjacentElement('afterbegin', ThirdColumn);
-    Pictures.insertAdjacentElement('afterbegin', SecondColumn);
+    Pictures.insertAdjacentElement('afterbegin', FivePicture);
+    Pictures.insertAdjacentElement('afterbegin', TwPicture);
+    Pictures.insertAdjacentElement('afterbegin', SecondPicture);
+    Pictures.insertAdjacentElement('afterbegin', FirstPicture);
+    Pictures.insertAdjacentElement('afterbegin', SevenPicture);
+    Pictures.insertAdjacentElement('afterbegin', TenPicture);
+    Pictures.insertAdjacentElement('afterbegin', FourthPicture);
+    Pictures.insertAdjacentElement('afterbegin', ThirdPicture);
+    Pictures.insertAdjacentElement('afterbegin', SecondPicture);
+    Pictures.insertAdjacentElement('afterbegin', SixPicture);
+    Pictures.insertAdjacentElement('afterbegin', ElPicture);
+    Pictures.insertAdjacentElement('afterbegin', NinePicture);
+    Pictures.insertAdjacentElement('afterbegin', FirstPicture);
+    Pictures.insertAdjacentElement('afterbegin', EightPicture);
 
     active.classList.add('activeButton');
   }

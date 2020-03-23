@@ -127,7 +127,7 @@ ButtonsBlock.addEventListener('click', event => {
     Pictures.insertAdjacentElement('afterbegin', NinePicture);
 
     active.classList.add('activeButton');
-  } else {
+  } else if (active.classList[0] === 'graphic-button') {
     Pictures.innerHTML = '';
     Pictures.insertAdjacentElement('afterbegin', FivePicture);
     Pictures.insertAdjacentElement('afterbegin', TwPicture);

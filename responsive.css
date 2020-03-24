@@ -145,8 +145,6 @@ body {
 }
 .iphoneVerticalBlock {
   position: relative;
-  /* left: 107px; */
-  /* top: 70px; */
   width: 218px;
   height: 461px;
 }
@@ -223,8 +221,6 @@ body {
 
 .iphoneHorizontalBlock {
   position: relative;
-  /* left: 407px; */
-  /* top: -260px; */
   width: 461px;
   height: 218px;
   margin: 0;
@@ -288,7 +284,6 @@ body {
   width: 1020px;
   background-color: #f2f2f2;
   padding-top: 10px;
-  /* padding-left: 10px; */
 }
 .sericesBlock-shadow {
   position: relative;
@@ -331,7 +326,7 @@ body {
 .sixServicesBlock-elem__phone,
 .sixServicesBlock-elem__bubble,
 .sixServicesBlock-elem__star {
-  width: 30%;
+  width: 33%;
 }
 .sixServicesBlock-elem__pen {
 }
@@ -352,13 +347,13 @@ body {
   display: inline-block;
 }
 .imgBlock {
-  top: -50%;
+  top: -52%;
   left: 0px;
 }
 .textBlock {
   top: 0px;
   left: 0px;
-  width: 65%;
+  width: 70%;
 }
 .penHeading,
 .bulbHeading,
@@ -515,7 +510,6 @@ body {
 .bubbleParagraph3 {
   left: 15px;
   top: -30px;
-  letter-spacing: 0.13px;
   word-spacing: 0px;
 }
 .starParagraph {
@@ -586,8 +580,8 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 287px;
-  padding: 5px 40px;
+  width: 275px;
+  padding: 5px 5px 5px 25px;
 }
 .portfolioButton {
   height: 22px;
@@ -629,6 +623,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 700px;
   width: 985px;
   margin: 0 auto;
   overflow: hidden;
@@ -652,7 +647,7 @@ body {
 }
 .picture-block__3 {
   background-image: url('assets/img/Layer\ 9.png');
-  background-position: -11px -1px;
+  background-position: 0px 0px;
 }
 .picture-block__4 {
   background-image: url('assets/img/Project\ \(1\).png');
@@ -758,7 +753,8 @@ body {
   text-align: left;
 }
 .about__1 {
-  word-spacing: 0.7px;
+  word-spacing: 1px;
+  letter-spacing: 0.19px;
 }
 
 .about__2 {
@@ -776,6 +772,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 154px;
+  margin-top: 1%;
 }
 .social__3 {
   left: -1px;
@@ -1014,7 +1011,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* top: 0px; */
   width: 1020px;
   height: 76px;
   background-color: #2d303a;
@@ -1029,15 +1025,11 @@ body {
 }
 .copyright {
   position: relative;
-  /* top: 18px; */
-  /* left: -150px; */
   font-size: 12px;
   letter-spacing: -0.07px;
 }
 .socials-block-footer {
   position: relative;
-  /* top: 21px; */
-  /* left: 159px; */
   width: 160px;
 }
 .socials-block-footer img {
@@ -1046,10 +1038,10 @@ body {
 .notificationBlock {
   padding: 10px;
   position: fixed;
-  top: 30%;
-  left: 25%;
-  width: 450px;
-  height: 250px;
+  top: 35%;
+  left: 21%;
+  width: 55%;
+  height: 35%;
   background-color: #d9dceb;
   z-index: 100;
 }
@@ -1076,8 +1068,8 @@ body {
 }
 #okButton {
   position: absolute;
-  top: 210px;
-  left: 380px;
+  top: 85%;
+  left: 90%;
   width: 50px;
   height: 30px;
   background-color: forestgreen;
@@ -1123,8 +1115,6 @@ body {
   }
   .sliderBlock2 {
     position: absolute;
-    /* left: 0px; */
-    /* top: 0px; */
     display: inline-block;
     width: 100%;
     height: 600px;
@@ -1205,6 +1195,7 @@ body {
   .portfolio-pictures {
     width: 95%;
     margin: 0 auto;
+    height: 800px;
   }
   .portfolio-shadow {
     width: 100%;
@@ -1258,15 +1249,6 @@ body {
     color: #f0d8d9;
     font-family: 'Lato Light A';
     text-align: left;
-  }
-  .connect-moto {
-    /* top: 95px; */
-    /* left: 41px; */
-    /* word-spacing: 1px; */
-  }
-  .connect-moto2 {
-    top: 68px;
-    left: 40px;
   }
 
   .connect-form {
@@ -1441,6 +1423,16 @@ body {
   .next {
     left: 89%;
   }
+  .prev:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color:transparent;
+  }
+  .next:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color:transparent;
+  }
   .iphoneVerticalBlock {
     position: relative;
     width: 218px;
@@ -1539,17 +1531,73 @@ body {
   .portfolio-moto,
   .section-moto,
   .section-moto2 {
-    width: 95%;
+    width: 85%;
   }
   .portfolio-pictures {
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
   }
   .portfolio-shadow {
     width: 100%;
   }
+
+  .picture-block__1 {
+    background-image: url('assets/img/Project\ \(7\).png');
+    background-position: 3px 3px;
+  }
+  .picture-block__2 {
+    background-image: url('assets/img/Project\ \(5\).png');
+    background-position: 0px 0px;
+  }
+  .picture-block__3 {
+    background-image: url('assets/img/Layer\ 9.png');
+    /* background-position: -11px -1px; */
+  }
+  .picture-block__4 {
+    background-image: url('assets/img/Project\ \(1\).png');
+    background-position: -0px 0px;
+  }
+  .picture-block__5 {
+    background-image: url('assets/img/Project55.png');
+    background-position: 0px 0px;
+  }
+  .picture-block__6 {
+    background-image: url('assets/img/Project\ \(4\).png');
+    background-position: 0px 0px;
+  }
+  .picture-block__7 {
+    background-image: url('assets/img/Layer\ 11.png');
+    background-position: 0px 0px;
+  }
+  .picture-block__8 {
+    background-image: url('assets/img/Layer\ 8.png');
+    background-position: 0px 0px;
+  }
+  .picture-block__9 {
+    background-image: url('assets/img/Project\ \(6\).png');
+    background-position: 0px 0px;
+  }
+  .picture-block__10 {
+    background-image: url('assets/img/Project\ \(3\).png');
+    background-position: 0px 0px;
+  }
+  .picture-block__11 {
+    background-image: url('assets/img/Project\ \(2\).png');
+    background-position: -144px -175px;
+  }
+  .picture-block__12 {
+    background-image: url('assets/img/Project.png');
+    background-position: -36px -60px;
+  }
+
   .picture-block {
-    margin: 1%;
+    margin: 5px;
+    margin-bottom: 1%;
+    width: 37%;
+    /* height: 48%; */
+    height: 24%;
+    /* transform: scale(0.5); */
+    background-size: 100% 100%;
   }
 
   .about-us {

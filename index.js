@@ -29,6 +29,9 @@ const ButtonsBlock = document.querySelector('.portfolio-buttons');
 const Submit = document.querySelector('.connect-input__submit');
 const Connect = document.querySelector('.connect');
 
+const MenuBtn = document.querySelector('.mobileMenu');
+let IsMenuInactive = true;
+
 navbar.addEventListener('click', event => {
   let previousActive = navbar.querySelector('.navbar-elem__active');
   if (previousActive) {
@@ -185,4 +188,15 @@ Submit.addEventListener('click', event => {
     document.querySelector('#iSubject').value = '';
     document.querySelector('#tDescribe').value = '';
   });
+});
+MenuBtn.addEventListener('click', () => {
+  if (IsMenuInactive) {
+    MenuBtn.style.transform = 'rotate(90deg)';
+    navbar.style.transform = 'translate(0px, 0px)';
+    IsMenuInactive = false;
+  } else {
+    MenuBtn.style.transform = 'rotate(0deg)';
+    navbar.style.transform = 'translate(-500px, 0px)';
+    IsMenuInactive = true;
+  }
 });

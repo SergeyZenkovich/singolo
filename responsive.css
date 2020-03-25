@@ -18,6 +18,7 @@ body {
 }
 .mobileMenu {
   display: none;
+  z-index: 1100;
 }
 .header-shadow {
   height: 6px;
@@ -77,11 +78,7 @@ body {
   color: #f06c6499;
 }
 .navbar-elem__dot {
-  /* display: inline-block; */
-  /* position: relative; */
-  /* top: 6px; */
   font-size: 26px;
-  /* line-height: 2px; */
   text-align: left;
   color: #494e62;
 }
@@ -1436,12 +1433,12 @@ body {
   .prev:hover {
     cursor: pointer;
     border-radius: 50%;
-    background-color:transparent;
+    background-color: transparent;
   }
   .next:hover {
     cursor: pointer;
     border-radius: 50%;
-    background-color:transparent;
+    background-color: transparent;
   }
   .iphoneVerticalBlock {
     position: relative;
@@ -1491,9 +1488,50 @@ body {
   .header-content {
     justify-content: flex-start;
   }
+
   .navbar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    background-color: #2d303a;
+    transform: translate(-500px, 0px);
+  }
+  .navbar-elem {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    line-height: 8px;
+    padding: 12px 8px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    font-family: 'Lato-Bold-A';
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .navbar-elem .navbar-elem__active {
+    color: #f06c64;
+  }
+  .navbarLink {
+    color: #ffffff;
+    font-family: 'Lato-Bold-A';
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .navbar-elem:hover a {
+    cursor: pointer;
+    color: #f06c6499;
+  }
+  .navbar-elem__dot {
     display: none;
   }
+
   .main {
     width: 100%;
   }
@@ -1628,15 +1666,15 @@ body {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 10px;
-}
+  }
 
-.person-photo {
-  position: relative;
-  width: 275px;
-  height: 300px;
-  margin: 0 auto;
-  background-color: #464b5e;
-}
+  .person-photo {
+    position: relative;
+    width: 275px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #464b5e;
+  }
 
   .connect {
     width: 100%;
@@ -1664,20 +1702,6 @@ body {
     padding: 0px 0px 20px 15px;
     width: 95%;
     height: 20%;
-    /* font-size: 18px; */
-    /* line-height: 30px; */
-    /* color: #f0d8d9; */
-    /* font-family: 'Lato Light A'; */
-    /* text-align: left; */
-  }
-  .connect-moto {
-    /* top: 95px; */
-    /* left: 41px; */
-    /* word-spacing: 1px; */
-  }
-  .connect-moto2 {
-    top: 68px;
-    left: 40px;
   }
 
   .connect-form {
@@ -1716,7 +1740,6 @@ body {
     position: relative;
     width: 55%;
     height: 60px;
-    /* margin: 0 auto; */
   }
   .connect-contactInfoBlock {
     position: relative;
@@ -1749,27 +1772,28 @@ body {
   .notificationParagraph {
     font-size: 20px;
     line-height: 20px;
-}
+  }
 
-.subjectNotification, .descriptionNotification {
-  font-size: 14px;
-  line-height: 16px;
-}
+  .subjectNotification,
+  .descriptionNotification {
+    font-size: 14px;
+    line-height: 16px;
+  }
 
-#okButton {
-  position: absolute;
-  top: 85%;
-  left: 75%;
-  width: 40px;
-  height: 30px;
-  background-color: forestgreen;
-  color: #ffffff;
-  font-family: 'Lato Light B';
-  font-size: 18px;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-}
+  #okButton {
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    width: 40px;
+    height: 30px;
+    background-color: forestgreen;
+    color: #ffffff;
+    font-family: 'Lato Light B';
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+  }
 
   .notificationBlock {
     padding: 10px;

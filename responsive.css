@@ -795,7 +795,7 @@ body {
 .connect {
   position: relative;
   width: 1020px;
-  height: 653px;
+  /* height: 653px; */
   background-color: #f06c64;
 }
 .connect-shadow {
@@ -1039,8 +1039,8 @@ body {
   padding: 10px;
   position: fixed;
   top: 35%;
-  left: 21%;
-  width: 55%;
+  left: 25%;
+  width: 700px;
   height: 35%;
   background-color: #d9dceb;
   z-index: 100;
@@ -1069,7 +1069,7 @@ body {
 #okButton {
   position: absolute;
   top: 85%;
-  left: 90%;
+  left: 85%;
   width: 50px;
   height: 30px;
   background-color: forestgreen;
@@ -1243,7 +1243,7 @@ body {
     margin: 0;
     padding: 25px;
     width: 95%;
-    height: 57px;
+    /* height: 57px; */
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
@@ -1311,6 +1311,16 @@ body {
   .socials-block-footer {
     position: relative;
     width: 160px;
+  }
+  .notificationBlock {
+    padding: 10px;
+    position: fixed;
+    top: 35%;
+    left: 21%;
+    width: 55%;
+    height: 35%;
+    background-color: #d9dceb;
+    z-index: 100;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 500px) {
@@ -1522,7 +1532,7 @@ body {
   .sixServicesBlock-elem__phone,
   .sixServicesBlock-elem__bubble,
   .sixServicesBlock-elem__star {
-    width: 90%;
+    width: 98%;
   }
 
   .portfolio {
@@ -1594,9 +1604,7 @@ body {
     margin: 5px;
     margin-bottom: 1%;
     width: 37%;
-    /* height: 48%; */
     height: 24%;
-    /* transform: scale(0.5); */
     background-size: 100% 100%;
   }
 
@@ -1612,8 +1620,24 @@ body {
     display: flex;
     justify-content: space-between;
     width: 90%;
+    flex-direction: column;
     margin: 0 auto;
   }
+
+  .person-info-block {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.person-photo {
+  position: relative;
+  width: 275px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #464b5e;
+}
+
   .connect {
     width: 100%;
   }
@@ -1637,14 +1661,14 @@ body {
   .connect-moto2 {
     position: relative;
     margin: 0;
-    padding: 25px;
+    padding: 0px 0px 20px 15px;
     width: 95%;
-    height: 57px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #f0d8d9;
-    font-family: 'Lato Light A';
-    text-align: left;
+    height: 20%;
+    /* font-size: 18px; */
+    /* line-height: 30px; */
+    /* color: #f0d8d9; */
+    /* font-family: 'Lato Light A'; */
+    /* text-align: left; */
   }
   .connect-moto {
     /* top: 95px; */
@@ -1661,8 +1685,9 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 45%;
+    width: 90%;
     height: 400px;
+    margin: 0 auto;
   }
   .connect-input__name,
   .connect-input__email,
@@ -1678,6 +1703,7 @@ body {
   .connect-contactBlock {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
   }
 
@@ -1688,11 +1714,14 @@ body {
 
   .smallInfoBlock {
     position: relative;
-    width: 75%;
+    width: 55%;
     height: 60px;
+    /* margin: 0 auto; */
   }
   .connect-contactInfoBlock {
     position: relative;
+    width: 95%;
+    margin: 0 auto;
   }
   .footer {
     position: relative;
@@ -1716,5 +1745,40 @@ body {
   .socials-block-footer {
     position: relative;
     width: 160px;
+  }
+  .notificationParagraph {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.subjectNotification, .descriptionNotification {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#okButton {
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  width: 40px;
+  height: 30px;
+  background-color: forestgreen;
+  color: #ffffff;
+  font-family: 'Lato Light B';
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+  .notificationBlock {
+    padding: 10px;
+    position: fixed;
+    top: 35%;
+    left: 21%;
+    width: 55%;
+    height: 35%;
+    background-color: #d9dceb;
+    z-index: 100;
   }
 }

@@ -192,11 +192,11 @@ Submit.addEventListener('click', event => {
 MenuBtn.addEventListener('click', () => {
   if (IsMenuInactive) {
     MenuBtn.style.transform = 'rotate(90deg)';
-    navbar.style.transform = 'translate(0px, 0px)';
+    navbar.classList.add('navbar__active');
     IsMenuInactive = false;
   } else {
     MenuBtn.style.transform = 'rotate(0deg)';
-    navbar.style.transform = 'translate(-500px, 0px)';
+    navbar.classList.remove('navbar__active');
     IsMenuInactive = true;
   }
 });
